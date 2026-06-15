@@ -1,12 +1,12 @@
 repos:
--   repo: https://github.com/psf/black
-    rev: 23.1.0
+-   repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 26.5.1
     hooks:
     - id: black
       language_version: python3.9
       files: ^(hourlize/tests/.*\.py?|hourlize/reeds_to_rev.*\.py?)$
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v6.0.0
     hooks:
     -   id: check-json
     -   id: check-yaml
@@ -22,7 +22,7 @@ repos:
         files: ^(hourlize/tests/.*\.py?|hourlize/reeds_to_rev.*\.py?)$
     -   id: requirements-txt-fixer
 -   repo: https://github.com/PyCQA/pylint
-    rev: v2.16.2
+    rev: v4.0.6
     hooks:
     -   id: pylint
         args: [
